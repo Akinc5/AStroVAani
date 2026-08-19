@@ -15,6 +15,7 @@ import Calculators from './pages/Calculators'
 import Panchang from './pages/Panchang'
 import Shop from './pages/Shop'
 import Blog from './pages/Blog'
+import AstroLogic from './pages/AstroLogic'
 
 const GOOGLE_CLIENT_ID = import.meta.env.VITE_GOOGLE_CLIENT_ID || '';
 
@@ -48,6 +49,7 @@ function App() {
                 <Route path="/panchang" element={<Panchang />} />
                 <Route path="/shop" element={<Shop />} />
                 <Route path="/blog" element={<Blog />} />
+                <Route path="/astrologic" element={<AstroLogic />} />
                 <Route path="/dashboard" element={<AstrologerDashboard />} />
               </Routes>
             </main>

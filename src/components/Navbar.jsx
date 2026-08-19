@@ -210,6 +210,16 @@ export default function Navbar() {
               fontSize: '14px', color: isActive ? '#fff' : '#d1d5db', textDecoration: 'none',
               fontWeight: 500, opacity: 0.9, transition: 'color 0.2s',
             })}>Blog</NavLink>
+
+            {/* AstroLogic */}
+            <NavLink to="/astrologic" style={({ isActive }) => ({
+              fontSize: '14px', textDecoration: 'none', fontWeight: 600,
+              opacity: isActive ? 1 : 0.9, transition: 'all 0.2s',
+              color: isActive ? '#fbbf24' : '#d1d5db',
+              display: 'flex', alignItems: 'center', gap: '5px',
+            })}>
+              <span style={{ fontSize: '14px' }}>⚗️</span> AstroLogic
+            </NavLink>
           </div>
 
           {/* Right: Auth / User */}
